@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "브랜드 디자인 시스템",
     category: "Brand Identity / Strategy",
     description: "브랜드의 본질을 담은 로고부터 컬러 시스템, 슬로건까지 일관된 시각 언어로 강력한 정체성을 구축합니다.",
-    images: ["https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2000&auto=format&fit=crop","/Brand-01.jpg"], // [ ] 추가
+    images: ["https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2000&auto=format&fit=crop","/Brand-01.jpg","/Brand-02.jpg"], // [ ] 추가
     year: "2026"
   },
   {
