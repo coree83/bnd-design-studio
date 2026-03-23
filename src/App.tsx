@@ -92,9 +92,9 @@ export default function App() {
           </motion.h2>
           
           <div className="space-y-6">
-            {/* Email Contact */}
+            {/* ✉️ 이메일: 클릭 시 메일 앱 실행 & 제목 자동 입력 */}
             <motion.a 
-              href="mailto:bnddesign@bnddesign.co.kr"
+              href="mailto:bnddesign@bnddesign.co.kr?subject=[BND DESIGN] 프로젝트 문의드립니다."
               whileHover={{ scale: 1.05 }}
               className="group flex items-center justify-center space-x-4 text-xl md:text-3xl font-medium border-b-2 border-black pb-2"
             >
@@ -102,9 +102,9 @@ export default function App() {
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </motion.a>
 
-            {/* Phone Contact */}
+            {/* 📞 전화번호: 모바일에서 클릭 시 바로 통화 화면으로 연결 */}
             <motion.a 
-              href="tel:+82-10-8757-2316"
+              href="tel:01087572316"
               whileHover={{ opacity: 0.6 }}
               className="flex items-center justify-center space-x-2 text-lg md:text-xl opacity-80"
             >
