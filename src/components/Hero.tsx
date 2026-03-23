@@ -25,7 +25,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-xs md:text-sm uppercase tracking-[0.4em] mb-6 block font-medium opacity-70"
         >
-          AI Design Studio / Seoul
+          AI Design Studio
         </motion.span>
         
         <motion.h1 
