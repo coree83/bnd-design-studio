@@ -1,39 +1,50 @@
-import { motion } from 'motion/react';
-import { Project } from '../data/projects';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 interface ProjectCardProps {
-  project: Project;
-  index: number;
-  key?: string | number;
+  project: {
+    title: string;
+    category: string;
+    description: string;
+    images: string[];
+    year: string;
+  };
 }
 
-export default function ProjectCard({ project, index }: ProjectCardProps) {
+const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8, delay: index * 0.1 }}
-      className="group relative cursor-pointer overflow-hidden"
-    >
-      <div className="aspect-[4/5] overflow-hidden bg-zinc-900">
-        <motion.img 
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          src={project.image} 
-          alt={project.title}
-          className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
-          referrerPolicy="no-referrer"
-        />
+    <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+      <div className="relative h-[300px] overflow-hidden">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          navigation
+          pagination={{ clickable: true }}
+          className="h-full w-full"
+        >
+          {project.images.map((img, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={img}
+                alt={`${project.title} ${index + 1}`}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      
-      <div className="mt-6 flex justify-between items-start">
-        <div>
-          <h3 className="text-lg font-medium uppercase tracking-tight">{project.title}</h3>
-          <p className="text-xs uppercase tracking-widest opacity-50 mt-1">{project.category}</p>
+      <div className="p-6">
+        <div className="flex justify-between items-start mb-2">
+          <p className="text-sm text-blue-600 font-medium uppercase tracking-wider">{project.category}</p>
+          <span className="text-xs text-gray-400">{project.year}</span>
         </div>
-        <span className="text-xs font-mono opacity-30">{project.year}</span>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
+        <p className="text-gray-600 text-sm leading-relaxed">{project.description}</p>
       </div>
-    </motion.div>
+    </div>
   );
-}
+};
+
+export default ProjectCard;
