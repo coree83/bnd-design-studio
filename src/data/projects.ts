@@ -21,7 +21,7 @@ export const projects: Project[] = [
     title: "프리미엄 편집 디자인",
     category: "Editorial / Print Media",
     description: "브로슈어, 카탈로그, 매거진 등 종이의 질감과 타이포그래피의 조화를 통해 독보적인 브랜드 경험을 전달합니다.",
-    image: "포스터_목업_2026.jpg",
+    image: "/2026 poster 01.jpg",
     year: "2024"
   },
   {
