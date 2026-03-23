@@ -6,6 +6,17 @@ import { projects } from './data/projects';
 import { ArrowRight, Instagram, Phone } from 'lucide-react';
 
 export default function App() {
+  
+  // 💡 이메일 클릭 시 복사해주는 마법의 함수
+  const handleCopyEmail = (e: React.MouseEvent) => {
+    e.preventDefault(); // 기본 링크 이동 방지
+    navigator.clipboard.writeText('bnddesign@bnddesign.co.kr').then(() => {
+      alert('✅ 이메일 주소가 복사되었습니다! 원하시는 메일에 붙여넣기 해주세요.');
+    }).catch(() => {
+      alert('복사에 실패했습니다. 다시 시도해주세요.');
+    });
+  };
+
   return (
     <div className="bg-white text-black selection:bg-black selection:text-white">
       <Navbar />
@@ -92,17 +103,18 @@ export default function App() {
           </motion.h2>
           
           <div className="space-y-6">
-            {/* ✉️ 이메일: 클릭 시 메일 앱 실행 & 제목 자동 입력 */}
+            {/* ✉️ 이메일: 클릭 시 '복사 완료' 알림창 띄우기 */}
             <motion.a 
-              href="mailto:bnddesign@bnddesign.co.kr?subject=[BND DESIGN] 프로젝트 문의드립니다."
+              href="#"
+              onClick={handleCopyEmail}
               whileHover={{ scale: 1.05 }}
-              className="group flex items-center justify-center space-x-4 text-xl md:text-3xl font-medium border-b-2 border-black pb-2"
+              className="group flex items-center justify-center space-x-4 text-xl md:text-3xl font-medium border-b-2 border-black pb-2 cursor-pointer"
             >
               <span>bnddesign@bnddesign.co.kr</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </motion.a>
 
-            {/* 📞 전화번호: 모바일에서 클릭 시 바로 통화 화면으로 연결 */}
+            {/* 📞 전화번호: 모바일 통화 연결 유지 */}
             <motion.a 
               href="tel:01087572316"
               whileHover={{ opacity: 0.6 }}
