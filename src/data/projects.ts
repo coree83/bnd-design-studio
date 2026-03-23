@@ -4,56 +4,56 @@ export interface Project {
   category: string;
   description: string;
   image: string;
-  year: string; // ← 이 줄을 추가합니다!
+  year: string;
 }
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: "AI 비주얼 제작",
-    category: "광고 / 제품 / 건축",
-    description: "고해상도 광고 이미지, 제품 렌더링, 건축 및 인테리어 시안을 AI로 정교하게 제작합니다.",
-    image: "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&w=2000&auto=format&fit=crop",
-    year: "2024" // ← 연도 추가
-  },
-  {
-    id: 2,
-    title: "브랜드 시스템 설계",
-    category: "브랜딩 / 전략",
-    description: "데이터 기반의 브랜드 컨셉 정의부터 컬러, 타이포그래피, 비주얼 가이드라인을 설계합니다.",
+    title: "브랜드 디자인 시스템",
+    category: "Brand Identity / Strategy",
+    description: "브랜드의 본질을 담은 로고부터 컬러 시스템, 슬로건까지 일관된 시각 언어로 강력한 정체성을 구축합니다.",
     image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2000&auto=format&fit=crop",
     year: "2024"
   },
   {
+    id: 2,
+    title: "프리미엄 편집 디자인",
+    category: "Editorial / Print Media",
+    description: "브로슈어, 카탈로그, 매거진 등 종이의 질감과 타이포그래피의 조화를 통해 독보적인 브랜드 경험을 전달합니다.",
+    image: "https://images.unsplash.com/photo-1544450173-8c879791368a?q=80&w=2000&auto=format&fit=crop",
+    year: "2024"
+  },
+  {
     id: 3,
-    title: "자동화 디자인 서비스",
-    category: "이커머스 / SNS",
-    description: "SNS 콘텐츠, 쇼핑몰 상세페이지, 배너 및 포스터를 대량으로 자동 생성하여 업무 효율을 높입니다.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2000&auto=format&fit=crop",
+    title: "웹 & 앱 디지털 경험",
+    category: "UX/UI / Digital Platform",
+    description: "사용자 중심의 직관적인 UI 설계와 감각적인 UX를 통해 브랜드의 디지털 경쟁력을 극대화합니다.",
+    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=2000&auto=format&fit=crop",
     year: "2024"
   },
   {
     id: 4,
-    title: "프롬프트 설계 서비스",
-    category: "B2B / 자동화 시스템",
-    description: "기업 전용 맞춤형 AI 프롬프트 제작 및 디자인 자동화 워크플로우를 구축해 드립니다.",
+    title: "AI 비주얼 제작 솔루션",
+    category: "AI Visualizing / Content",
+    description: "상상 속의 비주얼을 AI 기술로 구체화하여, 고해상도 광고 이미지부터 컨셉 아트까지 신속하고 정교하게 생성합니다.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000&auto=format&fit=crop",
     year: "2024"
   },
   {
     id: 5,
-    title: "AI 모션 & 영상 제작",
-    category: "비디오 / 애니메이션",
-    description: "AI를 활용해 정적인 이미지를 역동적인 광고 영상과 모션 그래픽으로 변환합니다.",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2000&auto=format&fit=crop",
+    title: "건축 & 인테리어 투시도",
+    category: "Space Design / Rendering",
+    description: "공간의 철학이 담긴 인테리어 시안과 건축 투시도를 제작하여, 완성될 공간의 가치를 미리 시각화합니다.",
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2000&auto=format&fit=crop",
     year: "2024"
   },
   {
     id: 6,
-    title: "AI 가상 모델 제작",
-    category: "모델링 / 브랜드 아이덴티티",
-    description: "브랜드를 대표하는 전용 모델과 캐릭터를 AI로 생성하여 마케팅 효율을 극대화합니다.",
-    image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2000&auto=format&fit=crop",
+    title: "교회 브랜딩 & 미디어",
+    category: "Church Ministry Design",
+    description: "교회의 영성과 비전을 현대적인 감각으로 재해석하여, 예배 배너부터 주보, 미디어 사역 전반의 디자인을 총괄합니다.",
+    image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2000&auto=format&fit=crop",
     year: "2024"
   }
 ];
