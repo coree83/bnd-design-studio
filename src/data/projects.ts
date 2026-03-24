@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "브랜드 디자인 시스템",
     category: "Brand Identity / Strategy",
     description: "브랜드의 본질을 담은 로고부터 컬러 시스템, 슬로건까지 일관된 시각 언어로 강력한 정체성을 구축합니다.",
-    images: ["Brand-01.jpg", "Brand-02.jpg", "Brand-03.jpg", "Brand-04.jpg"], // [ ] 추가
+    images: ["/Brand-01.jpg", "/Brand-02.jpg", "/Brand-03.jpg", "/Brand-04.jpg"], // [ ] 추가
     year: "2026"
   },
   {
@@ -21,7 +21,7 @@ export const projects: Project[] = [
     title: "프리미엄 편집 디자인",
     category: "Editorial / Print Media",
     description: "브로슈어, 카탈로그, 매거진 등 종이의 질감과 타이포그래피의 조화를 통해 독보적인 브랜드 경험을 전달합니다.",
-    images: ["Editorial-01.jpg", "Baner-01.jpg","Editorial-02.jpg", "Editorial-03.jpg", "Editorial-04.jpg", "Editorial-05.jpg"], // 쉼표(,) 누락 수정 완료
+    images: ["/Editorial-01.jpg", "/Baner-01.jpg", "/Editorial-02.jpg", "/Editorial-03.jpg", "/Editorial-04.jpg", "/Editorial-05.jpg"], // 쉼표(,) 누락 수정 완료
     year: "2026"
   },
   {
