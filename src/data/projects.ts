@@ -37,7 +37,7 @@ export const projects: Project[] = [
     title: "Product & Package Design / AI Visualization",
     category: "AI 기반 프리미엄 패키지 디자인",
     description: "생성형 AI 기술을 패키지 디자인 프로세스에 도입하여, 아이디어 스케치부터 최종 고해상도 3D 목업까지 신속하게 구현합니다. 상상 속의 컨셉을 정교한 비주얼로 구체화하여 소비자에게 강력한 브랜드 메시지를 전달하는 패키지 경험을 창출합니다.",
-    images: ["https://images.unsplash.com/photo-1607006411066-414ce51cb6cd?auto=format&fit=crop&w=1200&q=80", "/Package-01.jpg", "/Package-02.jpg", "/Package-03.jpg"], 
+    images: ["https://images.unsplash.com/photo-1589729132389-8f0e0b55b91e?auto=format&fit=crop&w=1200&q=80", "/Package-01.jpg", "/Package-02.jpg", "/Package-03.jpg"], 
     year: "2026"
   },
   {
