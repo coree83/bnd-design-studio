@@ -46,7 +46,7 @@ export const projects: Project[] = [
     category: "Poster / Banner Design",
     description: "핵심 메시지를 직관적으로 전달하는 타이포그래피와 강렬한 비주얼로, 시선을 사로잡는 효과적인 키비주얼 및 포스터를 제작합니다.",
     // 따옴표 누락 수정 완료!
-    images: ["https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2000&auto=format&fit=crop", "/Poster-01.jpg", "/Poster-02.jpg", "/Poster-03.jpg", "/Poster-04.jpg", "/Poster-05.jpg"],
+    images: ["/Poster-01.jpg", "/Poster-02.jpg", "/Poster-03.jpg", "/Poster-04.jpg", "/Poster-05.jpg"],
     year: "2026"
   },
   {
