@@ -62,7 +62,7 @@ export const projects: Project[] = [
     title: "Product & Package Design / AI Visualization",
     category: "프리미엄 패키지 디자인",
     description: "아이디어 스케치부터 최종 고해상도 3D 목업까지 신속하게 구현합니다. 상상 속의 컨셉을 정교한 비주얼로 구체화하여 소비자에게 강력한 브랜드 메시지를 전달하는 패키지 경험을 창출합니다.",
-    images: ["/Package-01.jpg", "/Package-02.jpg", "/Package-03.jpg"], 
+    images: ["/Package-01.jpg", "/Package-02.jpg", "/Package-03.jpg", "/Package-04.jpg", "/Package-05.jpg", "/Package-06.jpg"], 
     year: "2026"
   },
   {
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     title: "교회 브랜딩 & 미디어",
     category: "Church Ministry Design",
     description: "교회의 영성과 비전을 현대적인 감각으로 재해석하여, 예배 배너부터 주보, 미디어 사역 전반의 디자인을 총괄합니다.",
-    images: ["https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2000&auto=format&fit=crop"],
+    images: ["https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2000&auto=format&fit=crop", "/Church-01.jpg", "/Church-02.jpg", "/Church-03.jpg", "/Church-04.jpg", "/Church-05.jpg", "/Church-06.jpg"],
     year: "2026"
   }
 ];
