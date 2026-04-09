@@ -9,9 +9,10 @@ interface ProjectCardProps {
     images: string[];
     year: string;
   };
+  index: number; // 👈 에러 해결의 핵심! 순서 번호(index)를 받겠다고 선언합니다.
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project, index }: ProjectCardProps) => { // 👈 여기도 index를 받도록 추가했습니다.
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -58,11 +59,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               onScroll={handleScroll}
               className="flex h-full w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide"
             >
-              {project.images.map((img, index) => (
-                <div key={index} className="w-full h-full flex-shrink-0 snap-center relative">
+              {project.images.map((img, imgIndex) => (
+                <div key={imgIndex} className="w-full h-full flex-shrink-0 snap-center relative">
                   <img
                     src={img}
-                    alt={`${project.title} - ${index + 1}`}
+                    alt={`${project.title} - ${imgIndex + 1}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -87,11 +88,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
                 {/* 하단 점(Pagination) */}
                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
-                  {project.images.map((_, index) => (
+                  {project.images.map((_, dotIndex) => (
                     <div
-                      key={index}
+                      key={dotIndex}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        index === activeIndex ? 'bg-white w-4' : 'bg-white/50'
+                        dotIndex === activeIndex ? 'bg-white w-4' : 'bg-white/50'
                       }`}
                     />
                   ))}
