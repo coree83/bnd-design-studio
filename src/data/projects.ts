@@ -37,7 +37,7 @@ export const projects: Project[] = [
     title: "전시 행사 & 프로모션 디자인",
     category: "Exhibition / Event Design",
     description: "전시 부스, 팝업 스토어 및 행사 전반의 공간 경험을 설계하고, 관람객의 몰입도를 높이는 입체적인 디자인 솔루션을 제공합니다.",
-    images: ["https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=2000&auto=format&fit=crop"],
+    images: ["https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=2000&auto=format&fit=crop", "/Exhibition-01.jpg", "/Exhibition-02.jpg", "/Exhibition-03.jpg", "/Exhibition-04.jpg"],
     year: "2026"
   },
   {
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     title: "홍보 & 광고 캠페인",
     category: "Promotion / Advertising",
     description: "온·오프라인을 아우르는 통합 광고 매체에 맞춰, 타겟의 공감을 이끌어내고 브랜드 인지도를 극대화하는 크리에이티브를 기획합니다.",
-    images: ["https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000&auto=format&fit=crop"],
+    images: ["https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000&auto=format&fit=crop", "/Advertising-01.jpg", "/Advertising-02.jpg"],
     year: "2026"
   },
   {
