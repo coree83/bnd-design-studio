@@ -5,6 +5,9 @@ import ProjectCard from './components/ProjectCard';
 import { projects } from './data/projects';
 import { ArrowRight, Instagram, Phone } from 'lucide-react';
 
+// 1. 클라이언트 섹션 컴포넌트 불러오기
+import ClientSection from './components/ClientSection';
+
 export default function App() {
   
   // 💡 이메일 클릭 시 복사해주는 마법의 함수
@@ -51,6 +54,9 @@ export default function App() {
             ))}
           </div>
         </section>
+
+        {/* 2. 클라이언트 섹션 배치 (작업물 리스트와 About 섹션 사이) */}
+        <ClientSection />
 
         {/* About Section */}
         <section id="about" className="bg-black text-white px-6 py-24 md:px-12 md:py-40">
@@ -103,7 +109,6 @@ export default function App() {
           </motion.h2>
           
           <div className="space-y-6">
-            {/* ✉️ 이메일: 클릭 시 '복사 완료' 알림창 띄우기 */}
             <motion.a 
               href="#"
               onClick={handleCopyEmail}
@@ -114,7 +119,6 @@ export default function App() {
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </motion.a>
 
-            {/* 📞 전화번호: 모바일 통화 연결 유지 */}
             <motion.a 
               href="tel:01087572316"
               whileHover={{ opacity: 0.6 }}

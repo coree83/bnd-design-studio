@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   category: string;
   description: string;
-  images: string[]; // ← 배열 형태이므로 아래 데이터도 모두 [ ]를 써야 합니다.
+  images: string[];
   year: string;
 }
 
@@ -45,7 +45,6 @@ export const projects: Project[] = [
     title: "포스터 & 배너 디자인",
     category: "Poster / Banner Design",
     description: "핵심 메시지를 직관적으로 전달하는 타이포그래피와 강렬한 비주얼로, 시선을 사로잡는 효과적인 키비주얼 및 포스터를 제작합니다.",
-    // 따옴표 누락 수정 완료!
     images: ["/Poster-01.jpg", "/Baner-01.jpg", "/Poster-02.jpg", "/Poster-03.jpg", "/Poster-04.jpg", "/Poster-05.jpg"],
     year: "2026"
   },
@@ -83,7 +82,6 @@ export const projects: Project[] = [
   }
 ];
 
-// 최종 업데이트된 클라이언트 로고 리스트 (총 26개)
 export const clients = [
   "독립기념관", "실학박물관", "수원화성박물관", "서울여성문화재단", 
   "충주시아동발달센터", "국제성서박물관", "경기도", "경기복지재단", 
